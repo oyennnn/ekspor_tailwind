@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Nusantara Global Cemerlang</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- SwiperJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- SwiperJS JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      /* Tambahkan style untuk menu mobile */
+      @media (max-width: 768px) {
+        #mobile-menu {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.9);
+          z-index: 60;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #mobile-menu.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <header class="text-white">
+      <!-- Navbar untuk Desktop -->
+      <nav
+        id="navbar"
+        class="flex justify-between items-center px-4 md:px-8 py-4 bg-transparent transition duration-300 fixed w-full z-50 text-white"
+      >
+        <!-- Logo dan Judul -->
+        <div class="flex items-center">
+          <img
+            id="logo-white"
+            src="src/assets/logo_putih.png"
+            alt="Logo Putih"
+            class="h-8 md:h-10 transition-opacity duration-300 absolute"
+          />
+          <img
+            id="logo-blue"
+            src="src/assets/logo_biru.png"
+            alt="Logo Biru"
+            class="h-8 md:h-10 transition-opacity duration-300 opacity-0"
+          />
+          <h1 id="navbar-title" class="ml-2 text-sm md:text-xl font-bold">
+            PT Nusantara Global Cemerlang
+          </h1>
+        </div>
+
+        <!-- Navigasi Desktop -->
+        <div class="hidden md:flex items-center space-x-10">
+          <a href="#home" class="hover:text-blue-300 text-lg font-bold nav-link"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-blue-300 text-lg font-bold nav-link"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-blue-300 text-lg font-bold nav-link"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Tombol Hubungi Kami Desktop -->
+        <div class="hidden md:block">
+          <a
+            href="#contact"
+            class="px-4 py-2 border-2 border-white rounded-lg hover:bg-white hover:text-blue-900 nav-link"
+            >Hubungi Kami</a
+          >
+        </div>
+
+        <!-- Tombol Mobile Menu -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="md:hidden">
+        <button
+          id="close-mobile-menu"
+          class="absolute top-4 right-4 text-white text-3xl"
+        >
+          &times;
+        </button>
+        <div class="flex flex-col space-y-6 text-center">
+          <a href="#home" class="text-2xl text-white mobile-nav-link">Home</a>
+          <a href="#about" class="text-2xl text-white mobile-nav-link">About</a>
+          <a href="#contact" class="text-2xl text-white mobile-nav-link"
+            >Contact</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 bg-blue-700 text-white rounded-lg mobile-nav-link"
+          >
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="px-4 md:px-16 lg:px-32 min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-blue-500 to-blue-900"
+    >
+      <div class="swiper-container w-full max-w-6xl mx-auto mt-[100px]">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div
+                class="text-center lg:text-left space-y-4 md:space-y-6 z-10 relative px-4"
+              >
+                <h2
+                  class="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                >
+                  Ekspor Impor <br />Kursi Berkualitas
+                </h2>
+                <p
+                  class="text-white/80 text-sm md:text-base lg:text-xl max-w-xl mx-auto lg:mx-0"
+                >
+                  Kami menyediakan kursi premium dengan kualitas internasional
+                  untuk kebutuhan bisnis Anda.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
+                >
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 bg-white text-blue-700 font-bold rounded-full hover:bg-blue-100 transition duration-300 shadow-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    Pesan Sekarang
+                  </button>
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 border-2 border-white text-white rounded-full hover:bg-white/20 transition duration-300 flex items-center justify-center"
+                  >
+                    <i class="fas fa-play-circle mr-2"></i>
+                    Lihat Video
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="src/assets/no_bg/pixelcut-export (1).png"
+                  alt="Kursi"
+                  class="relative z-10 transform hover:scale-110 transition duration-500 ease-in-out mx-auto max-w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div
+                class="text-center lg:text-left space-y-4 md:space-y-6 z-10 relative px-4"
+              >
+                <h2
+                  class="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                >
+                  Desain Modern <br />Kursi Kantor
+                </h2>
+                <p
+                  class="text-white/80 text-sm md:text-base lg:text-xl max-w-xl mx-auto lg:mx-0"
+                >
+                  Kursi ergonomis dengan desain kontemporer untuk produktivitas
+                  maksimal.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
+                >
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 bg-white text-green-700 font-bold rounded-full hover:bg-green-100 transition duration-300 shadow-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-eye mr-2"></i>
+                    Lihat Koleksi
+                  </button>
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 border-2 border-white text-white rounded-full hover:bg-white/20 transition duration-300 flex items-center justify-center"
+                  >
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Detail Produk
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="src/assets/no_bg/pixelcut-export (1).png"
+                  alt="Kursi Modern"
+                  class="relative z-10 transform hover:scale-110 transition duration-500 ease-in-out mx-auto max-w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div
+                class="text-center lg:text-left space-y-4 md:space-y-6 z-10 relative px-4"
+              >
+                <h2
+                  class="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                >
+                  Solusi Kursi <br />Terbaik Anda
+                </h2>
+                <p
+                  class="text-white/80 text-sm md:text-base lg:text-xl max-w-xl mx-auto lg:mx-0"
+                >
+                  Pengalaman kenyamanan terbaik dengan teknologi dan desain
+                  mutakhir.
+                </p>
+                <div
+                  class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
+                >
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 bg-white text-purple-700 font-bold rounded-full hover:bg-purple-100 transition duration-300 shadow-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    Hubungi Kami
+                  </button>
+                  <button
+                    class="px-4 py-2 md:px-6 md:py-3 border-2 border-white text-white rounded-full hover:bg-white/20 transition duration-300 flex items-center justify-center"
+                  >
+                    <i class="fas fa-comment-dots mr-2"></i>
+                    Konsultasi
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="src/assets/no_bg/pixelcut-export (1).png"
+                  alt="Pilihan Terbaik"
+                  class="relative z-10 transform hover:scale-110 transition duration-500 ease-in-out mx-auto max-w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Navigation dan Pagination -->
+        <div class="swiper-pagination mb-4 md:mb-10"></div>
+        <div
+          class="hidden lg:block swiper-button-next mr-4 md:mr-10 text-white"
+        ></div>
+        <div
+          class="hidden lg:block swiper-button-prev ms-4 md:ms-10 text-white"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Kategori untuk Mobile -->
+    <div class="text-center py-8 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Kategori Teratas</h2>
+      <p class="text-gray-600 mt-2 text-sm md:text-base">
+        Ikuti tren terpopuler dan dapatkan item eksklusif
+      </p>
+      <div class="flex justify-center items-center mt-4">
+        <div class="border-t border-gray-300 w-16"></div>
+        <i class="fas fa-gem mx-2 text-gray-400"></i>
+        <div class="border-t border-gray-300 w-16"></div>
+      </div>
+    </div>
+
+    <!-- Kategori Scroll Horizontal di Mobile -->
+    <div
+      class="flex overflow-x-auto space-x-4 px-4 py-4 md:justify-center md:space-x-8"
+    >
+      <div class="flex-shrink-0 text-center">
+        <div
+          class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto"
+        >
+          <img
+            alt="Chair"
+            alt="Chair"
+            class="w-full h-full object-cover"
+            src="https://storage.googleapis.com/a1aa/image/mdQl13OM8558PFjKWR5j7x8ondFyPFJn18koEJAnwxPdMi8E.jpg"
+          />
+        </div>
+        <p class="mt-4 font-semibold text-sm md:text-base">Kursi</p>
+      </div>
+
+      <!-- Tambahkan item kategori lainnya dengan pola yang sama -->
+      <div class="flex-shrink-0 text-center">
+        <div
+          class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto"
+        >
+          <img
+            alt="Pot"
+            class="w-full h-full object-cover"
+            src="https://storage.googleapis.com/a1aa/image/LBvBzPIxDP4eWCfap1gDFo0smlxYVfo6ReftQP2eB8jkcMi8E.jpg"
+          />
+        </div>
+        <p class="mt-4 font-semibold text-sm md:text-base">Pot</p>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <div
+          class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto"
+        >
+          <img
+            alt="Pot"
+            class="w-full h-full object-cover"
+            src="https://storage.googleapis.com/a1aa/image/LBvBzPIxDP4eWCfap1gDFo0smlxYVfo6ReftQP2eB8jkcMi8E.jpg"
+          />
+        </div>
+        <p class="mt-4 font-semibold text-sm md:text-base">Pot</p>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <div
+          class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto"
+        >
+          <img
+            alt="Pot"
+            class="w-full h-full object-cover"
+            src="https://storage.googleapis.com/a1aa/image/LBvBzPIxDP4eWCfap1gDFo0smlxYVfo6ReftQP2eB8jkcMi8E.jpg"
+          />
+        </div>
+        <p class="mt-4 font-semibold text-sm md:text-base">Pot</p>
+      </div>
+
+      <!-- Tambahkan item kategori lainnya -->
+    </div>
+
+    <!-- Section Produk Unggulan -->
+    <section class="bg-gray-50 py-16 px-4 md:px-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-blue-900 mb-4">
+          Produk Unggulan Kami
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Temukan berbagai produk berkualitas tinggi yang siap memenuhi
+          kebutuhan bisnis Anda dengan standar internasional.
+        </p>
+      </div>
+
+      <!-- Grid Produk -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Produk 1 -->
+        <div
+          class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="relative">
+            <img
+              src="src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-002.png"
+              alt="Kursi Kantor Premium"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm"
+            >
+              Best Seller
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Kursi Premium</h3>
+            <p class="text-gray-600 mb-4">
+              Kursi ergonomis dengan desain modern untuk kenyamanan maksimal di
+              ruang kerja.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-700">Rp 2.500.000</span>
+              <div class="flex items-center">
+                <i class="fas fa-star text-yellow-400"></i>
+                <span class="ml-2 text-gray-600">(4.8)</span>
+              </div>
+            </div>
+            <div class="mt-6 flex space-x-4">
+              <button
+                class="flex-1 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+              >
+                <i class="fas fa-shopping-cart mr-2"></i>Beli Sekarang
+              </button>
+              <button
+                class="wishlist-button relative px-6 py-2 text-blue-600 bg-blue-100 hover:bg-blue-600 hover:text-white rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+                data-product-id="1"
+              >
+                <div class="flex items-center justify-center">
+                  <i class="fas fa-search-plus mr-2"></i>
+                  <span>Detail Produk</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div
+          class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="relative">
+            <img
+              src="src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-004.png"
+              alt="Meja Kerja Modern"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm"
+            >
+              New Arrival
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Lemari Modern</h3>
+            <p class="text-gray-600 mb-4">
+              Lemari minimalis dengan fitur smart storage untuk ruang kerja yang
+              lebih efisien.
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-blue-700">Rp 3.750.000</span>
+              <div class="flex items-center">
+                <i class="fas fa-star text-yellow-400"></i>
+                <span class="ml-2 text-gray-600">(4.9)</span>
+              </div>
+            </div>
+            <div class="mt-6 flex space-x-4">
+              <button
+                class="flex-1 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+              >
+                <i class="fas fa-shopping-cart mr-2"></i>Beli Sekarang
+              </button>
+              <button
+                class="wishlist-button relative px-6 py-2 text-blue-600 bg-blue-100 hover:bg-blue-600 hover:text-white rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+                data-product-id="2"
+              >
+                <div class="flex items-center justify-center">
+                  <i class="fas fa-search-plus mr-2"></i>
+                  <span>Detail Produk</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div
+          class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="relative">
+            <img
+              src="src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-011.png"
+              alt="Lemari Arsip Professional"
+              class="w-full h-64 object-cover"
+            />
+            <div
+              class="absolute top-4 right-4 bg-red-500 text-white px 3 py-1 rounded-full text-sm"
+            >
+              Diskon 20%
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Kursi</h3>
+            <p class="text-gray-600 mb-4">
+              Kursi berkualitas tinggi dengan keamanan terjamin.
+            </p>
+            <div class="flex justify-between items-center">
+              <div>
+                <span class="text-2xl font-bold text-blue-700"
+                  >Rp 4.200.000</span
+                >
+                <span class="text-gray-400 line-through ml-2"
+                  >Rp 5.250.000</span
+                >
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-star text-yellow-400"></i>
+                <span class="ml-2 text-gray-600">(4.7)</span>
+              </div>
+            </div>
+            <div class="mt-6 flex space-x-4">
+              <button
+                class="flex-1 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+              >
+                <i class="fas fa-shopping-cart mr-2"></i>Beli Sekarang
+              </button>
+              <button
+                class="wishlist-button relative px-6 py-2 text-blue-600 bg-blue-100 hover:bg-blue-600 hover:text-white rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+                data-product-id="3"
+              >
+                <div class="flex items-center justify-center">
+                  <i class="fas fa-search-plus mr-2"></i>
+                  <span>Detail Produk</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Lihat Semua Produk -->
+      <div class="text-center mt-12">
+        <a
+          href="#"
+          class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition inline-flex items-center"
+        >
+          <i class="fas fa-th-large mr-3"></i>
+          Lihat Semua Produk
+          <i class="fas fa-chevron-right ml-3"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Keunggulan Produk -->
+    <section class="py-16 px-4 md:px-16 bg-white">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-blue-900 mb-4">
+          Mengapa Memilih Produk Kami?
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Kami memberikan jaminan kualitas dan pelayanan terbaik untuk setiap
+          produk yang kami tawarkan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Keunggulan 1 -->
+        <div
+          class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition"
+        >
+          <div
+            class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-shield-alt text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Kualitas Terjamin</h3>
+          <p class="text-gray-600">
+            Setiap produk melalui Quality Control ketat sebelum dikirimkan.
+          </p>
+        </div>
+
+        <!-- Keunggulan 2 -->
+        <div
+          class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition"
+        >
+          <div
+            class="bg-green-100 text-green-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-truck text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Pengiriman Cepat</h3>
+          <p class="text-gray-600">
+            Proses pengiriman cepat dan aman ke seluruh wilayah Indonesia.
+          </p>
+        </div>
+
+        <!-- Keunggulan 3 -->
+        <div
+          class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition"
+        >
+          <div
+            class="bg-purple-100 text-purple-600 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4"
+          >
+            <i class="fas fa-headset text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Dukungan Pelanggan</h3>
+          <p class="text-gray-600">
+            Tim support siap membantu Anda 24/7 dengan professional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12 px-4 md:px-16">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Kolom Pertama: Logo dan Deskripsi -->
+        <div>
+          <div class="flex items-center mb-4">
+            <img
+              src="src/assets/logo_putih.png"
+              alt="Logo Perusahaan"
+              class="h-12 mr-3"
+            />
+            <h3 class="text-xl font-bold">PT Nusantara Global</h3>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Kami adalah perusahaan terkemuka dalam bidang ekspor impor dengan
+            komitmen tinggi terhadap kualitas dan pelayanan.
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-white hover:text-blue-300">
+              <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-blue-300">
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-blue-300">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-blue-300">
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kedua: Layanan -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Layanan</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                Ekspor Produk
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                Impor Barang
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                Konsultasi Bisnis
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white transition">
+                Manajemen Logistik
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom Ketiga: Kontak -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Kontak</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3"></i>
+              <span class="text-gray-300">Jakarta, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span class="text-gray-300">+62 812-3456-7890</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span class="text-gray-300">info@nusantaglobal.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom Keempat: Newsletter -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+          <p class="text-gray-300 mb-4">
+            Dapatkan update terbaru dan informasi ekslusif dari kami.
+          </p>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Email Anda"
+              class="px-4 py-2 w-full text-gray-800 rounded-l-lg focus:outline-none"
+            />
+            <button
+              class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition"
+            >
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garis Pembatas -->
+      <div class="border-t border-blue-700 my-8"></div>
+
+      <!-- Hak Cipta -->
+      <div class="text-center">
+        <p class="text-gray-300">
+          © 2024 PT Nusantara Global Cemerlang. All Rights Reserved.
+        </p>
+        <div class="mt-2 space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white"
+            >Kebijakan Privasi</a
+          >
+          <a href="#" class="text-gray-300 hover:text-white"
+            >Syarat & Ketentuan</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Detail Produk -->
+    <div
+      id="productDetailModal"
+      class="fixed inset-0 z-[100] hidden items-center justify-center overflow-x-hidden overflow-y-auto bg-black bg-opacity-50"
+    >
+      <div class="relative w-full max-w-4xl mx-4 md:mx-auto">
+        <div
+          class="bg-white rounded-xl shadow-2xl relative flex flex-col md:flex-row"
+        >
+          <!-- Tombol Tutup -->
+          <button
+            id="closeProductDetailModal"
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-50"
+          >
+            <i class="fas fa-times text-3xl"></i>
+          </button>
+
+          <!-- Galeri Produk -->
+          <div class="w-full md:w-1/2 p-6">
+            <div class="mb-4">
+              <img
+                id="modalProductMainImage"
+                src=""
+                alt="Gambar Produk"
+                class="w-full h-96 object-cover rounded-lg"
+              />
+            </div>
+
+            <!-- Thumbnail Produk -->
+            <div class="flex space-x-2" id="modalProductThumbnails">
+              <!-- Thumbnail akan diisi secara dinamis -->
+            </div>
+          </div>
+
+          <!-- Informasi Produk -->
+          <div class="w-full md:w-1/2 p-6">
+            <div>
+              <h2
+                id="modalProductTitle"
+                class="text-3xl font-bold text-blue-900 mb-2"
+              >
+                Nama Produk
+              </h2>
+
+              <!-- Rating -->
+              <div class="flex items-center mb-4">
+                <div class="flex text-yellow-400" id="modalProductRating">
+                  <!-- Rating akan diisi secara dinamis -->
+                </div>
+                <span id="modalRatingText" class="text-gray-600 ml-2"></span>
+              </div>
+
+              <!-- Harga -->
+              <div class="mb-4">
+                <span
+                  id="modalProductPrice"
+                  class="text-3xl font-bold text-blue-700"
+                ></span>
+                <span
+                  id="modalProductOldPrice"
+                  class="text-gray-500 line-through ml-3"
+                ></span>
+                <span
+                  id="modalDiscountBadge"
+                  class="bg-green-500 text-white px-2 py-1 rounded-full ml-3 text-sm"
+                ></span>
+              </div>
+
+              <!-- Deskripsi -->
+              <p id="modalProductDescription" class="text-gray-600 mb-4"></p>
+
+              <!-- Pilihan Warna -->
+              <div class="mb-4">
+                <h4 class="font-semibold mb-2">Pilih Warna:</h4>
+                <div class="flex space-x-2" id="modalProductColors">
+                  <!-- Warna akan diisi secara dinamis -->
+                </div>
+              </div>
+
+              <!-- Ukuran -->
+              <div class="mb-4">
+                <h4 class="font-semibold mb-2">Pilih Ukuran:</h4>
+                <div class="flex space-x-2" id="modalProductSizes">
+                  <!-- Ukuran akan diisi secara dinamis -->
+                </div>
+              </div>
+
+              <!-- Tombol Aksi -->
+              <div class="flex space-x-4">
+                <button
+                  id="modalAddToCartBtn"
+                  class="flex-1 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i class="fas fa-shopping-cart mr-2"></i>Tambah ke Keranjang
+                </button>
+                <button
+                  id="modalBuyNowBtn"
+                  class="flex-1 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
+                >
+                  <i class="fas fa-bolt mr-2"></i>Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Data Produk
+      const productsData = [
+        {
+          id: 1,
+          name: "Kursi Premium",
+          description:
+            "Kursi ergonomis dengan desain modern untuk kenyamanan maksimal di ruang kerja.",
+          price: 2500000,
+          oldPrice: null,
+          rating: 4.8,
+          reviewCount: 120,
+          mainImage:
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-002.png",
+          thumbnails: [
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-002.png",
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-004.png",
+          ],
+          colors: ["Hitam", "Abu-abu", "Putih"],
+          sizes: ["S", "M", "L"],
+        },
+        {
+          id: 2,
+          name: "Lemari Modern",
+          description:
+            "Lemari minimalis dengan fitur smart storage untuk ruang kerja yang lebih efisien.",
+          price: 3750000,
+          oldPrice: null,
+          rating: 4.9,
+          reviewCount: 95,
+          mainImage:
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-004.png",
+          thumbnails: [
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-004.png",
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-002.png",
+          ],
+          colors: ["Coklat", "Putih", "Hitam"],
+          sizes: ["100x50", "120x60", "150x70"],
+        },
+        {
+          id: 3,
+          name: "Kursi",
+          description: "Kursi berkualitas tinggi dengan keamanan terjamin.",
+          price: 4200000,
+          oldPrice: 5250000,
+          rating: 4.7,
+          reviewCount: 80,
+          mainImage:
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-011.png",
+          thumbnails: [
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-011.png",
+            "src/assets/gambar/SONJAYA RATTAN CV (3).pdf-image-002.png",
+          ],
+          colors: ["Merah", "Biru", "Hijau"],
+          sizes: ["S", "M", "L", "XL"],
+        },
+      ];
+
+      // Fungsi untuk membuka modal produk
+      function openProductDetailModal(productId) {
+        // Temukan produk berdasarkan ID
+        const product = productsData.find((p) => p.id === productId);
+
+        if (!product) return;
+
+        // Update gambar utama
+        document.getElementById("modalProductMainImage").src =
+          product.mainImage;
+
+        // Update thumbnails
+        const thumbnailContainer = document.getElementById(
+          "modalProductThumbnails"
+        );
+        thumbnailContainer.innerHTML = product.thumbnails
+          .map(
+            (thumb) => `
+    <img 
+      src="${thumb}" 
+      alt="Thumbnail" 
+      class="w-16 h-16 object-cover rounded cursor-pointer hover:opacity-75"
+      onclick="document.getElementById('modalProductMainImage').src = '${thumb}'"
+    />
+  `
+          )
+          .join("");
+
+        // Update inform asi produk
+        document.getElementById("modalProductTitle").textContent = product.name;
+        document.getElementById("modalProductDescription").textContent =
+          product.description;
+        document.getElementById("modalProductPrice").textContent = formatRupiah(
+          product.price
+        );
+        document.getElementById("modalProductOldPrice").textContent =
+          product.oldPrice ? formatRupiah(product.oldPrice) : "";
+        document.getElementById("modalDiscountBadge").textContent =
+          product.oldPrice ? "Diskon 20%" : "";
+
+        // Update rating
+        const ratingContainer = document.getElementById("modalProductRating");
+        ratingContainer.innerHTML = generateStarRating(product.rating);
+        document.getElementById(
+          "modalRatingText"
+        ).textContent = `(${product.reviewCount} ulasan)`;
+
+        // Update warna
+        const colorContainer = document.getElementById("modalProductColors");
+        colorContainer.innerHTML = product.colors
+          .map(
+            (color) => `
+    <div class="w-8 h-8 rounded-full border-2 border-gray-300 cursor-pointer" style="background-color: ${color.toLowerCase()}"></div>
+  `
+          )
+          .join("");
+
+        // Update ukuran
+        const sizeContainer = document.getElementById("modalProductSizes");
+        sizeContainer.innerHTML = product.sizes
+          .map(
+            (size) => `
+    <button class="border-2 border-gray-300 px-3 py-1 rounded cursor-pointer hover:bg-gray-200">${size}</button>
+  `
+          )
+          .join("");
+
+        // Tampilkan modal
+        document
+          .getElementById("productDetailModal")
+          .classList.remove("hidden");
+      }
+
+      // Fungsi untuk menutup modal
+      document
+        .getElementById("closeProductDetailModal")
+        .addEventListener("click", () => {
+          document.getElementById("productDetailModal").classList.add("hidden");
+        });
+
+      // Format Rupiah
+      function formatRupiah(number) {
+        return new Intl.NumberFormat("id-ID", {
+          style: "currency",
+          currency: "IDR",
+        }).format(number);
+      }
+
+      // Generate Star Rating
+      function generateStarRating(rating) {
+        const fullStars = Math.floor(rating);
+        const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+
+        let stars = "";
+        for (let i = 0; i < fullStars; i++) {
+          stars += '<i class="fas fa-star"></i>';
+        }
+        if (halfStar) {
+          stars += '<i class="fas fa-star-half-alt"></i>';
+        }
+        return stars;
+      }
+
+      // Event listener untuk tombol detail produk
+      document.querySelectorAll(".wishlist-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const productId = parseInt(button.getAttribute("data-product-id"));
+          openProductDetailModal(productId);
+        });
+      });
+    </script>
+
+    <!-- Swiper Initialization -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "fade", // Efek fade
+        fadeEffect: {
+          crossFade: true, // Aktifkan cross fade
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000, // Berganti setiap 3 detik (3000 milidetik)
+          disableOnInteraction: false, // Tetap lanjutkan autoplay meskipun pengguna berinteraksi
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Script untuk Menu Mobile -->
+    <script>
+      // Toggle Menu Mobile
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMobileMenu = document.getElementById("close-mobile-menu");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+      // Buka Menu Mobile
+      mobileMenuToggle.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+      });
+
+      // Tutup Menu Mobile
+      closeMobileMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
+
+      // Tutup Menu Mobile saat salah satu link diklik
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
+      });
+
+      // Logo dan Navbar Scroll Script (dari kode sebelumnya)
+      const navbar = document.getElementById("navbar");
+      const navbarTitle = document.getElementById("navbar-title");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const logoWhite = document.getElementById("logo-white");
+      const logoBiru = document.getElementById("logo-blue");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          // Saat di-scroll
+          navbar.classList.remove("bg-transparent", "text-white");
+          navbar.classList.add("bg-white", "shadow-lg", "text-blue-900");
+
+          // Ubah logo
+          logoWhite.classList.add("opacity-0");
+          logoBiru.classList.remove("opacity-0");
+
+          navbarTitle.classList.remove("text-white");
+          navbarTitle.classList.add("text-blue-900");
+
+          // Ubah warna nav links
+          navLinks.forEach((link) => {
+            link.classList.remove(
+              "text-white",
+              "hover:text-blue-300",
+              "border-white"
+            );
+            link.classList.add(
+              "text-blue-900",
+              "hover:text-blue-700",
+              "border-blue-900"
+            );
+          });
+        } else {
+          // Kembali ke kondisi awal
+          navbar.classList.remove("bg-white", "shadow-lg", "text-blue-900");
+          navbar.classList.add("bg-transparent", "text-white");
+
+          // Kembalikan logo
+          logoWhite.classList.remove("opacity-0");
+          logoBiru.classList.add("opacity-0");
+
+          navbarTitle.classList.remove("text-blue-900");
+          navbarTitle.classList.add("text-white");
+
+          // Kembalikan warna nav links
+          navLinks.forEach((link) => {
+            link.classList.remove(
+              "text-blue-900",
+              "hover:text-blue-700",
+              "border-blue-900"
+            );
+            link.classList.add(
+              "text-white",
+              "hover:text-blue-300",
+              "border-white"
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
